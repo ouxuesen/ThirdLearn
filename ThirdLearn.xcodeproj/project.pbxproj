@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2296275F8AB4AE0900763FD3 /* Pods_ThirdLearn_ThirdLearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3234E535C8C4A0CE9038A0 /* Pods_ThirdLearn_ThirdLearnUITests.framework */; };
 		8354FB4814C4CC1B762D2F01 /* Pods_ThirdLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B0775B5FC1E2A12F0F442B /* Pods_ThirdLearnTests.framework */; };
+		D70016D323546975005D963C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70016D123546975005D963C /* MainViewController.swift */; };
+		D70016D423546975005D963C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D70016D223546975005D963C /* MainViewController.xib */; };
+		D70016D723546D25005D963C /* TextureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70016D623546D25005D963C /* TextureTableViewController.swift */; };
+		D70016DA235472C3005D963C /* TextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70016D8235472C3005D963C /* TextureViewController.swift */; };
+		D70016DB235472C3005D963C /* TextureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D70016D9235472C3005D963C /* TextureViewController.xib */; };
 		D72D971A235451A2004847F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72D9719235451A2004847F1 /* AppDelegate.swift */; };
 		D72D971C235451A2004847F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72D971B235451A2004847F1 /* SceneDelegate.swift */; };
 		D72D971E235451A2004847F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72D971D235451A2004847F1 /* ViewController.swift */; };
@@ -45,6 +50,11 @@
 		7D3234E535C8C4A0CE9038A0 /* Pods_ThirdLearn_ThirdLearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThirdLearn_ThirdLearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8B26D4F7CED3CBDE8CE543 /* Pods-ThirdLearn-ThirdLearnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLearn-ThirdLearnUITests.release.xcconfig"; path = "Target Support Files/Pods-ThirdLearn-ThirdLearnUITests/Pods-ThirdLearn-ThirdLearnUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBEB7CAEF1442D319662E335 /* Pods-ThirdLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLearn.debug.xcconfig"; path = "Target Support Files/Pods-ThirdLearn/Pods-ThirdLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		D70016D123546975005D963C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D70016D223546975005D963C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D70016D623546D25005D963C /* TextureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureTableViewController.swift; sourceTree = "<group>"; };
+		D70016D8235472C3005D963C /* TextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureViewController.swift; sourceTree = "<group>"; };
+		D70016D9235472C3005D963C /* TextureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextureViewController.xib; sourceTree = "<group>"; };
 		D72D9716235451A2004847F1 /* ThirdLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72D9719235451A2004847F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D72D971B235451A2004847F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +111,6 @@
 				259EDFE32CA8C9D40CAF3B1A /* Pods-ThirdLearnTests.debug.xcconfig */,
 				E2F77FDA8795B22E501B9EE7 /* Pods-ThirdLearnTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +122,16 @@
 				F3B0775B5FC1E2A12F0F442B /* Pods_ThirdLearnTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70016D523546CF4005D963C /* TextureTest */ = {
+			isa = PBXGroup;
+			children = (
+				D70016D623546D25005D963C /* TextureTableViewController.swift */,
+				D70016D8235472C3005D963C /* TextureViewController.swift */,
+				D70016D9235472C3005D963C /* TextureViewController.xib */,
+			);
+			path = TextureTest;
 			sourceTree = "<group>";
 		};
 		D72D970D235451A1004847F1 = {
@@ -140,6 +159,7 @@
 		D72D9718235451A2004847F1 /* ThirdLearn */ = {
 			isa = PBXGroup;
 			children = (
+				D70016D523546CF4005D963C /* TextureTest */,
 				D72D9719235451A2004847F1 /* AppDelegate.swift */,
 				D72D971B235451A2004847F1 /* SceneDelegate.swift */,
 				D72D971D235451A2004847F1 /* ViewController.swift */,
@@ -147,6 +167,8 @@
 				D72D9722235451A3004847F1 /* Assets.xcassets */,
 				D72D9724235451A3004847F1 /* LaunchScreen.storyboard */,
 				D72D9727235451A3004847F1 /* Info.plist */,
+				D70016D123546975005D963C /* MainViewController.swift */,
+				D70016D223546975005D963C /* MainViewController.xib */,
 			);
 			path = ThirdLearn;
 			sourceTree = "<group>";
@@ -281,6 +303,8 @@
 				D72D9726235451A3004847F1 /* LaunchScreen.storyboard in Resources */,
 				D72D9723235451A3004847F1 /* Assets.xcassets in Resources */,
 				D72D9721235451A2004847F1 /* Main.storyboard in Resources */,
+				D70016D423546975005D963C /* MainViewController.xib in Resources */,
+				D70016DB235472C3005D963C /* TextureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +434,10 @@
 			files = (
 				D72D971E235451A2004847F1 /* ViewController.swift in Sources */,
 				D72D971A235451A2004847F1 /* AppDelegate.swift in Sources */,
+				D70016D723546D25005D963C /* TextureTableViewController.swift in Sources */,
 				D72D971C235451A2004847F1 /* SceneDelegate.swift in Sources */,
+				D70016DA235472C3005D963C /* TextureViewController.swift in Sources */,
+				D70016D323546975005D963C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
